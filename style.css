@@ -1,0 +1,316 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background: url(./images/bg-hero-desktop.svg);
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.content {
+	width: 100%;
+	max-width: 90rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	padding-top: 3rem;
+}
+
+.header img {
+	max-width: 40%;
+}
+
+.header button {
+	padding: 0.5rem 3rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	background: #fff;
+	box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	color: hsl(192, 100%, 9%);
+}
+
+.maincard {
+	display: flex;
+	padding: 3.5rem 0 5rem;
+	width: 90%;
+	justify-content: space-between;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.maincardtext {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	gap: 1rem;
+	width: 28.1rem;
+}
+
+.maincard h1 {
+	font-weight: 700;
+	text-wrap: balance;
+}
+
+.maincard p {
+	font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.maincard button {
+	width: 15rem;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	background: hsl(322, 100%, 66%);
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+}
+
+.maincard img {
+	max-width: 44rem;
+}
+
+.card, .card2 {
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+	padding: 2rem;
+	border-radius: 1.3rem;
+}
+
+.card div, .card2 div {
+	display: flex;
+	flex-direction: column;
+	padding: 0 3rem 0;
+	align-self: center;
+	width: 37.4rem;
+	gap: 1rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+.card p, .card2 p {
+	font-size: 1.1rem;
+	color: hsl(208, 11%, 55%);
+}
+
+.card img, .card2 img {
+	width: 31rem;
+}
+
+.cards {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-bottom: 15rem;
+}
+
+.footercard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.3);
+	background: #fff;
+	width: 37.5rem;
+	padding: 3rem 5rem;
+	gap: 2rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	transform: translateY(-120%);
+	border-radius: 1rem;
+}
+
+.footercard button {
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	background: hsl(322, 100%, 66%);
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	width: 18.75rem;
+}
+
+.footer {
+	background: hsl(192, 100%, 9%);
+	width: 100%;
+	padding: 5rem 5rem 3rem;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+section {
+	width: 100%;
+}
+
+section > img {
+	width: 10rem;
+	filter: grayscale(100%) brightness(1000%);
+}
+
+.footer p {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	max-width: 18.75rem;
+}
+
+.footer section {
+	display: flex;
+	gap: 2rem;
+}
+
+.footer div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer nav {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.copy {
+	flex-direction: column;
+	font-size: 0.7rem;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.copy nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.copy img {
+	width: 2.3rem;
+	border: 1px solid black;
+	border-radius: 100%;
+	padding: 0.5rem;
+	filter: invert(1);
+}
+
+/* HOVER */
+
+button:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+	opacity: 0.7;
+}
+
+.aboutus span:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.copy img:hover {
+	filter: brightness(100%) invert(0) contrast(100%)
+		drop-shadow(-1px 0px 1px #e100ff) grayscale(0%) hue-rotate(50deg) invert(0%)
+		opacity(100%) saturate(100%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		background: url(./images/bg-hero-mobile.svg);
+		background-repeat: no-repeat;
+	}
+	.header {
+		max-width: 100%;
+	}
+	.header button {
+		padding: 0.2rem 1rem;
+	}
+	.maincard {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		max-width: 90%;
+	}
+	.maincardtext,
+	.card, .card2 {
+		width: auto;
+		align-items: center;
+		text-align: center;
+	}
+	.maincardtext h1 {
+		font-size: 1.7rem;
+	}
+	.maincard img {
+		width: 100%;
+	}
+	.cards {
+		width: 90%;
+	}
+	.card, .card2 {
+		display: flex;
+		gap: 4rem;
+		padding: 1.5rem;
+	}
+    .card {
+        flex-direction: column-reverse;
+    }
+    .card2 {
+        flex-direction: column;
+    }
+
+	.card img,.card2 img {
+		width: 100%;
+	}
+	.card div, .card2 div {
+		padding: 0;
+		width: 100%;
+	}
+
+	.card p, .card2 p {
+		font-size: 1rem;
+	}
+
+    .footercard {
+        padding: 3rem 1.5rem;
+        width: auto;
+        gap: 1rem;
+        font-size: 0.77rem;
+        transform: translateY(-340%);
+    }
+
+    .footer {
+        padding: 7rem 1rem 1rem;
+    }
+    .footer div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .aboutus {
+        padding-top: 2rem;
+    }
+    .aboutus2 {
+        padding-bottom: 2rem;
+    }
+    .copy {
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+}
