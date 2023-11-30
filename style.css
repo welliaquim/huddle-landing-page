@@ -83,7 +83,7 @@ body {
 }
 
 .maincard img {
-	max-width: 44rem;
+	width: 55%;
 }
 
 .card, .card2 {
@@ -111,7 +111,7 @@ body {
 }
 
 .card img, .card2 img {
-	width: 31rem;
+	width: 40%;
 }
 
 .cards {
@@ -204,12 +204,20 @@ section > img {
 	justify-content: flex-start;
 }
 
-.copy img {
-	width: 2.3rem;
-	border: 1px solid black;
+.copy div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #e100ff;
 	border-radius: 100%;
-	padding: 0.5rem;
-	filter: invert(1);
+	width: 2rem;
+	height: 2rem;
+	filter: grayscale(100%) brightness(0%) invert(1);
+}
+
+.copy svg {
+	/* filter: grayscale(100%) brightness(0%) invert(1); */
 }
 
 /* HOVER */
@@ -220,15 +228,13 @@ button:hover {
 	opacity: 0.7;
 }
 
-.aboutus span:hover {
+.aboutus span:hover, .aboutus2 span:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
 
-.copy img:hover {
-	filter: brightness(100%) invert(0) contrast(100%)
-		drop-shadow(-1px 0px 1px #e100ff) grayscale(0%) hue-rotate(50deg) invert(0%)
-		opacity(100%) saturate(100%);
+.copy div:hover{
+	filter: invert(0);
     cursor: pointer;
 }
 
